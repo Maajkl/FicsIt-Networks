@@ -439,14 +439,14 @@ This function unmounts if the device at the given mount point.
 === **File**
 
 
-=== __File.__**close** ()
+=== __File:__**close** ()
 Closes the File-Stream.
 
-=== __File.__**read** (int...) -> string...
+=== __File:__**read** (int...) -> string...
 Reads up to the given amount of bytes from the file.
 Strings may be smaller than the given amount of bytes due to f.e. reaching the End-Of-File.
 
-=== __File.__**seek** (where: string, offset: int) -> int
+=== __File:__**seek** (where: string, offset: int) -> int
 Moves the File-Streams pointer to a position defined by the offset and from what starting location.
 
 .Possble `where` values
@@ -457,6 +457,6 @@ Moves the File-Streams pointer to a position defined by the offset and from what
 * `end` Offset is relative to the end of the file
 ====
 
-=== __File.__**write** (string...)
+=== __File:__**write** (string...)
 Writes the given strings to the File-Stream.
 
